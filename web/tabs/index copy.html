@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <style>
+        
+        #tabs{
+           width:100%;
+        }   
+        
+        #tabs > .title-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #tabs .nav-items{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+           display: flex;
+           flex-direction: row;
+           border-bottom: 1px solid #dee2e6;
+        }
+
+        #tabs .nav-items .nav-item{
+                
+            font-weight: normal;
+            flex: 1 1 auto;
+            text-align: center; 
+            box-sizing: content-box;
+        }
+        #tabs .nav-items .nav-item.active{           
+            border-bottom: 3px solid !important;            
+            font-weight: bold;
+            border: 1px solid #dee2e6;
+            border-radius: 4px 4px 0px 0px;            
+        }
+
+        #tabs .tabs-content
+        {
+            padding-top: 60px;
+            width: 80%;
+            margin: auto;
+        }
+
+        #tabs .tabs-content .tab-pane{
+            /* background-color: aqua; */
+            display: none;
+            opacity:0;
+        }
+        #tabs .tabs-content .tab-pane.active{            
+            display: block;            
+            transition: opecity 1s ease-out;
+            opacity:1;
+        }
+
+        #tabs .nav-link{
+            text-decoration: none;
+            cursor: pointer;
+            color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+        }
+        #tabs .nav-link a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+        }
+        
+        #tabs .tab-pane.fade{
+            opacity: 0;        
+        }
+
+        #tabs .tab-pane .tabcontent-item {
+            background: #fff;
+            display: flex;
+            height: 275px;
+            padding: 50px 20px;
+            cursor: pointer;
+        }
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 33%;
+    padding: 0 0;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+        
+    </style>
+
+
+</head>
+
+<body>
+    <section id="tabs">
+        <div class="title-box">
+            <div class="logo"><img src="image/capital-t-logo-final-new-1.png" alt="techcoffers logo"></div>
+            <h6>What We Offer</h6>
+            <h2 class="pb-4">What We Offer</h2><i class="icon1"></i>
+        </div>
+        <nav>
+            <div class="nav-items">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                    role="tab" aria-controls="nav-home" aria-selected="true">SERVICES</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">TECHNOLOGIES</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                    role="tab" aria-controls="nav-contact" aria-selected="false">INDUSTRIES</a>
+            </div>
+        </nav>
+        <div class="tabs-content">
+            <div class="tab-pane fade active" id="nav-home">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum obcaecati quaerat necessitatibus distinctio quos vel iste dolor, error autem culpa sed quidem, accusantium modi natus unde ratione magnam exercitationem at!</div>
+            <div class="tab-pane fade" id="nav-profile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ex! Nesciunt, error similique ut, provident distinctio deserunt aspernatur qui facere assumenda blanditiis praesentium est repudiandae commodi veritatis natus vitae nostrum, consequatur quisquam libero doloribus. Consequuntur asperiores tempore quisquam placeat id quod nemo saepe incidunt ducimus numquam est quae ad iste totam, officia doloremque vero quos reprehenderit facere, eos pariatur quas eius natus! Dolorum cum aut, nihil atque explicabo voluptates eligendi esse repudiandae ad accusamus est rem labore iusto! Ex, dolores. Perspiciatis repellendus qui, voluptatem saepe repellat dolorum placeat quam, ipsa beatae odio adipisci pariatur maiores, cum laudantium aperiam ullam! Ipsam.</div>
+            <div class="tab-pane fade" id="nav-contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur velit nesciunt voluptate, nostrum cumque blanditiis corrupti doloremque voluptatum asperiores sunt odio nobis, aspernatur, quasi fugit! Consectetur veritatis delectus nobis corporis obcaecati qui pariatur itaque tenetur, dolor cum quae voluptas debitis temporibus eum non. Nemo tenetur at animi. Sed necessitatibus nostrum reprehenderit expedita quam? Dicta sed praesentium quod numquam necessitatibus aperiam aspernatur obcaecati, fugiat earum iure maxime amet, repellat eaque impedit assumenda officiis, omnis molestiae doloremque recusandae tenetur voluptatibus natus totam? Consequatur illum, earum molestias necessitatibus exercitationem amet, adipisci magnam atque culpa quisquam tempora aut quod laboriosam, possimus saepe reiciendis explicabo nostrum. Sit, labore incidunt? Et, hic. Quae, saepe in. Consequatur accusamus debitis id eos, quis rerum beatae numquam architecto odit atque deserunt quibusdam temporibus, minima ab porro velit incidunt necessitatibus, tempore sequi repellendus aliquam. Maxime, non vel alias sequi commodi et voluptatum voluptatibus officia! Impedit, dolores? Veniam nesciunt velit voluptate illum, repellendus itaque quibusdam, deserunt adipisci impedit non rem alias obcaecati quis perspiciatis error debitis pariatur assumenda voluptatem et commodi facere eveniet odio consequuntur. Tempore hic, ab animi dignissimos blanditiis laudantium doloremque voluptatibus non iusto ipsam exercitationem consequuntur, quod, eligendi corrupti eaque magni maiores quasi beatae cum! Debitis, dicta adipisci?</div>
+        </div> 
+        
+        
+    </section>
+    <script>
+
+        $('#nav-home').addClass('active');
+
+        $('#tabs .nav-items a').on('click', function (e) {
+            var target = $(this).attr('target');
+            var fancybox = $(this).data('fancybox');
+            var url = this.getAttribute("href");
+            var tabid=this.getAttribute("id");
+            e.preventDefault();
+            if (url.indexOf('#') != -1) {
+                    var hash = url.substring(url.indexOf('#'));
+                    var tabpanel=$(url);
+                    $('.tabs-content').each(function (i){
+                        $(this).find('.tab-pane').each(function (i){                            
+                        $(this).removeClass('active');
+                        if('#'+$(this).attr('id')==url){
+                            $(this).addClass('active');
+                        }  
+                    });
+                    });
+                    
+                    $('.nav-items').each(function (i){
+                        $(this).find('.nav-item').each(function (i){                            
+                        $(this).removeClass('active');
+                        if($(this).attr('id')==tabid){
+                            $(this).addClass('active');
+                        }  
+                    });
+                    });
+
+                    
+            }
+           
+            
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

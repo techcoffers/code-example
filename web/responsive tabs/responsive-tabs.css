@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tabbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.tabbox .content {
+    width: 100%;
+}
+
+
+.tabbox .tab-item {
+
+    font-weight: normal;
+    flex: 1 1 auto;
+    text-align: center;
+    box-sizing: content-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(0,0,255,1);
+    text-decoration: none;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    margin: 0;
+    transition: border-bottom 2s ease-in;
+    z-index: 9999;
+}
+
+.tabbox .bottm-line{
+    height:1px;
+    width:100%;
+    background:#dee2e6;
+    /* order: 5; */
+    position: relative;
+    top: -1px;
+}
+
+.tabbox .activeNav {
+    
+    font-weight: bold;
+    border: 1px solid #dee2e6;    
+    border-bottom: white solid 1px;    
+    border-radius: 4px 4px 0px 0px;
+}
+
+.tabbox .content {
+    transition: opacity 4s ease-out, height 3s ease-in;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    /* border-top: 1px solid #dee2e6; */
+
+}
+
+.tabbox .activeContent {
+    opacity: 1;
+    /* height: 50vw; */
+    height: auto;
+
+}
+
+@media only screen and (max-width:1076px) {
+        
+        
+    .tabbox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .tabbox .tab-item {
+        margin: 0.5px;
+        background-color:  rgba(0,0,255,1);
+        color: white;
+      
+    }
+    .tabbox .bottm-line{
+     display: none;
+     
+    }
+    .tabbox .content {
+        border-top: 0px solid #dee2e6;
+    }
+
+    .tabbox .activeNav {
+        /* border: 3px solid !important;   */
+        border-radius: 0px 0px 0px 0px;
+        border-bottom: 0px solid !important;
+    }
+
+    #nav-item1 {
+        order: 1;
+    }
+
+    #nav-item2 {
+        order: 3;
+    }
+
+    #nav-item3 {
+        order: 5;
+    }
+
+    #nav-item4 {
+        order: 7;
+    }
+
+    #nav-item1-content {
+        order: 2;
+    }
+
+    #nav-item2-content {
+        order: 4;
+    }
+
+    #nav-item3-content {
+        order: 6;
+    }
+
+    #nav-item4-content {
+        order: 8;
+    }
+
+}

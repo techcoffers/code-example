@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+
+   <style>
+/* Styling */
+body{
+  background-color: #f5f8fa;
+}
+.container-fluid {
+    width: 92%;
+    max-width: 1350px;
+}
+.timeline {
+  margin: 0em auto;
+  position: relative;
+}
+.timeline:before {
+  background-color:#28a8e0;
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 2px;
+  height: 100%;
+}
+
+.timeline-event {
+  position: relative;
+  list-style: none;
+}
+.timeline-event:hover .timeline-event-icon {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #0076aa;
+}
+.timeline-event:hover .timeline-event-thumbnail {
+  -moz-box-shadow: inset 40em 0 0 0 #0076aa;
+  -webkit-box-shadow: inset 40em 0 0 0 #0076aa;
+  box-shadow: inset 40em 0 0 0 #0076aa;
+}
+
+.timeline-event-copy {
+  padding: 1em;
+  position: relative;
+  top: -17px;
+  left: 4em;
+  width: 100%;
+  padding-bottom: 0;
+}
+.timeline-event-copy h3 {
+  font-size: 1.75em;
+}
+.timeline-event-copy h4 {
+  font-size: 1.2em;
+  margin-bottom:0;
+}
+.timeline-event-copy strong {
+  font-weight: 700;
+}
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+  padding-bottom: 0;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.timeline-event-icon {
+  -moz-transition: -moz-transform 0.2s ease-in;
+  -o-transition: -o-transform 0.2s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #28a8e0;
+  outline: 10px solid #fff;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: absolute;
+  top: 35px;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+}
+
+.timeline-event-thumbnail {
+  -moz-transition: box-shadow 0.5s ease-in 0.1s;
+  -o-transition: box-shadow 0.5s ease-in 0.1s;
+  -webkit-transition: box-shadow 0.5s ease-in;
+  -webkit-transition-delay: 0.1s;
+  transition: box-shadow 0.5s ease-in 0.1s;
+  color: white;
+  font-size: 0.75em;
+  background-color: #28a8e0;
+  -moz-box-shadow: inset 0 0 0 0em #ef795a;
+  -webkit-box-shadow: inset 0 0 0 0em #1f8ebe;
+  box-shadow: inset 0 0 0 0em #1f8ebe;
+  display: none;
+  margin-bottom: 15px;
+  padding: 5px 35px;
+  position: absolute;
+  left: -170px;
+}
+.timeline-image img {
+  width: 65%;
+  margin: 0 auto;
+  display: block;
+}
+       
+   </style>     
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 mb40">
+                <h6 class="sub-title wow words chars splitting animated" data-splitting="" style="--word-total:3; --char-total:9; visibility: visible;"><span class="word" data-word="How" style="--word-index:0;"><span class="char" data-char="H" style="--char-index:0;">H</span><span class="char" data-char="o" style="--char-index:1;">o</span><span class="char" data-char="w" style="--char-index:2;">w</span></span><span class="whitespace"> </span><span class="word" data-word="We" style="--word-index:1;"><span class="char" data-char="W" style="--char-index:3;">W</span><span class="char" data-char="e" style="--char-index:4;">e</span></span><span class="whitespace"> </span><span class="word" data-word="Work" style="--word-index:2;"><span class="char" data-char="W" style="--char-index:5;">W</span><span class="char" data-char="o" style="--char-index:6;">o</span><span class="char" data-char="r" style="--char-index:7;">r</span><span class="char" data-char="k" style="--char-index:8;">k</span></span> </h6>
+                <h3 class="con-h3 wow words chars splitting animated" data-splitting="" style="--word-total:3; --char-total:20; visibility: visible;"><span class="word" data-word="Our" style="--word-index:0;"><span class="char" data-char="O" style="--char-index:0;">O</span><span class="char" data-char="u" style="--char-index:1;">u</span><span class="char" data-char="r" style="--char-index:2;">r</span></span><span class="whitespace"> </span><span class="word" data-word="Process" style="--word-index:1;"><span class="char" data-char="P" style="--char-index:3;">P</span><span class="char" data-char="r" style="--char-index:4;">r</span><span class="char" data-char="o" style="--char-index:5;">o</span><span class="char" data-char="c" style="--char-index:6;">c</span><span class="char" data-char="e" style="--char-index:7;">e</span><span class="char" data-char="s" style="--char-index:8;">s</span><span class="char" data-char="s" style="--char-index:9;">s</span></span><span class="whitespace"> </span><span class="word" data-word="Highlights" style="--word-index:2;"><span class="char" data-char="H" style="--char-index:10;">H</span><span class="char" data-char="i" style="--char-index:11;">i</span><span class="char" data-char="g" style="--char-index:12;">g</span><span class="char" data-char="h" style="--char-index:13;">h</span><span class="char" data-char="l" style="--char-index:14;">l</span><span class="char" data-char="i" style="--char-index:15;">i</span><span class="char" data-char="g" style="--char-index:16;">g</span><span class="char" data-char="h" style="--char-index:17;">h</span><span class="char" data-char="t" style="--char-index:18;">t</span><span class="char" data-char="s" style="--char-index:19;">s</span></span> </h3>
+            </div>
+            <div class="col-md-7 mb40">
+                <p class="">We have, through a series of improvisations over the years, developed a web
+                    application development methodology that is optimized to help your product deliver a
+                    consistently great experience across browsers without getting straddled by the complexities
+                    involved. </p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="timeline-image web">
+                    <img src="../new-webstatic/images/mockup/03.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+
+                <ul class="timeline">
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Step 1</p>
+
+                            <h4>It all starts with asking the right questions. </h4>
+                            <p>A good place to start the building of a web application is by asking the right
+                                questions: What is this web app for? Which are the most important points of
+                                engagement with the user? How can users better navigate the application?
+                                Gathering information from both the business and customer standpoint offers a
+                                fine balance towards creating a pleasing and functional product. </p>
+
+                        </div>
+                    </li>
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Step 2</p>
+
+                            <h4>Designed to impress </h4>
+                            <p>Your web application must be effortlessly adopted by its users -- there are no
+                                two ways about it. Hence, we invest careful efforts into researching user
+                                journeys and mobile behavior. This ensures a personalized, streamlined and
+                                goal-oriented performance. </p>
+                        </div>
+                    </li>
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Step 3</p>
+
+                            <h4>Built to succeed </h4>
+                            <p>After getting your sign in on the prototype and wireframe, we set clear timelines
+                                to deliver the product in a phased manner. This allows for the flexibility to
+                                incorporate feedback after each phase. </p>
+                        </div>
+                    </li>
+
+
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Step 4</p>
+
+                            <h4>We detest bugs, too! </h4>
+                            <p>We hold our testing and maintenance to rigorous standards to ensure your web
+                                application is devoid of technical or user issues and performs well on various
+                                browsers, operating systems and devices. </p>
+                        </div>
+                    </li>
+
+                    <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-copy">
+                            <p class="timeline-event-thumbnail">Step 5</p>
+
+                            <h4> A relationship beyond the finish line </h4>
+                            <p>As your partners in innovation, we believe in going the extra mile. Our journey
+                                with your product doesn’t end with delivery. Our team will be around to guide
+                                and support you. Once the application is live, we continue to help you with
+                                deployment and support/ understand its impact, engagement and execute minor UX
+                                iterations/ bug fixes and updates for an additional few months. </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

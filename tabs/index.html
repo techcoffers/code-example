@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <style>
+        
+
+        div#nav-tabContent {
+            padding-top: 60px;
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            color: #490eea;
+            border-bottom: 3px solid !important;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #tabs nav {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        div#nav-tabContent >   .show {
+            display: block;
+        }
+
+        div#nav-tabContent > .tab-content>.tab-pane {
+            display: none;
+            
+        }
+
+        div#nav-tabContent > .fade {
+            transition: opacity .25s linear;
+        }
+
+        .tabcontent-item {
+            background: #fff;
+            display: flex;
+            height: 275px;
+            padding: 50px 20px;
+            cursor: pointer;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    <section id="tabs" class="project-tab">
+        <div class="title-block text-center mb-4 wow fadeIn animated animated" style="visibility: visible;">
+            <img src="dynamic/images/title-icon.png" alt="Image">
+            <h6>What We Offer</h6>
+            <h2 class="pb-4">What We Offer</h2><i class="icon1"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true">SERVICES</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">TECHNOLOGIES</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">INDUSTRIES</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="row">
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-top-left-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="85" height="82"
+                                            viewBox="0 0 85 82" class="offer-image replaced-svg">
+                                            <defs>
+                                                <filter id="a" width="104.3%" height="113.3%" x="-2.1%" y="-5.8%"
+                                                    filterUnits="objectBoundingBox">
+                                                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1">
+                                                    </feOffset>
+                                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                                        stdDeviation="7.5"></feGaussianBlur>
+                                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0">
+                                                    </feColorMatrix>
+                                                    <feMerge>
+                                                        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                                    </feMerge>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd" filter="url(#a)"
+                                                transform="translate(-385 -47)">
+                                                <path stroke="#323232"
+                                                    d="M451.478 110h-46.956c-1.945 0-3.522-1.562-3.522-3.488v-2.326h21.13l1.174 1.163h9.392l1.174-1.163H455v2.326c0 1.926-1.577 3.488-3.522 3.488zm-46.956-5.814v-3.488 3.488zm21.13-31.395h23.478a2.336 2.336 0 0 1 2.348 2.325v29.07">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M423.304 86.744v9.303a2.336 2.336 0 0 1-2.347 2.325h-17.61A2.336 2.336 0 0 1 401 96.047V62.326A2.336 2.336 0 0 1 403.348 60h17.609a2.336 2.336 0 0 1 2.347 2.326v17.441">
+                                                </path>
+                                                <path stroke="#490eea" stroke-linejoin="round"
+                                                    d="M401 91.395h22.304m0-25.581H401m9.391 29.07h3.522"></path>
+                                                <path stroke="#490eea"
+                                                    d="M433.87 83.256h-21.13m3.52 3.488l-3.52-3.488 3.52-3.489m14.088 6.977l3.522-3.488-3.522-3.489">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Enterprise Software Development </h3>
+                                            <p class="offer-content-description">
+                                                Create complex enterprise software, ensure reliable software
+                                                integration, modernise your legacy system.</p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="85" height="71"
+                                            viewBox="0 0 85 71" class="offer-image replaced-svg">
+                                            <defs>
+                                                <filter id="a" width="104.3%" height="113.3%" x="-2.1%" y="-5.8%"
+                                                    filterUnits="objectBoundingBox">
+                                                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1">
+                                                    </feOffset>
+                                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                                        stdDeviation="7.5"></feGaussianBlur>
+                                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0">
+                                                    </feColorMatrix>
+                                                    <feMerge>
+                                                        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                                    </feMerge>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd" filter="url(#a)"
+                                                transform="translate(-754 -39)">
+                                                <path stroke="#494946"
+                                                    d="M798.174 74.455v7.09a2.355 2.355 0 0 0 2.348 2.364h16.435a2.355 2.355 0 0 0 2.347-2.364v-20.09a2.355 2.355 0 0 0-2.347-2.364h-16.435a2.355 2.355 0 0 0-2.348 2.364v5.909m3.522 16.545V91h14.087v-7.09m0-24.82V52h-14.087v7.09">
+                                                </path>
+                                                <path stroke="#494946"
+                                                    d="M808.74 70.91h-28.175m3.522 3.545l-3.522-3.546 3.522-3.545m21.13 7.09l3.522-3.545-3.522-3.545m16.435 0h1.174c.648 0 1.174.53 1.174 1.181v4.728c0 .652-.526 1.182-1.174 1.182h-1.174">
+                                                </path>
+                                                <path stroke="#490eea" stroke-linejoin="round"
+                                                    d="M770 83.91h22.304m0-26H770m9.391 29.545h3.522"></path>
+                                                <path stroke="#490eea"
+                                                    d="M792.304 74.455v14.181A2.355 2.355 0 0 1 789.957 91h-17.61A2.355 2.355 0 0 1 770 88.636V54.364A2.355 2.355 0 0 1 772.348 52h17.609a2.355 2.355 0 0 1 2.347 2.364v13">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Mobile App Development </h3>
+                                            <p class="offer-content-description">
+                                                Create an impactful mobile app that fits your brand and industry within
+                                                a shorter time frame. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-top-right-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" height="82" viewBox="0 0 85 82"
+                                            width="85" class="offer-image replaced-svg">
+                                            <filter id="a" height="113.3%" width="104.3%" x="-2.1%" y="-5.8%">
+                                                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1">
+                                                </feOffset>
+                                                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                                    stdDeviation="7.5"></feGaussianBlur>
+                                                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"></feColorMatrix>
+                                                <feMerge>
+                                                    <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                                </feMerge>
+                                            </filter>
+                                            <g fill="none" fill-rule="evenodd" filter="url(#a)" stroke-linejoin="round"
+                                                transform="translate(-9 -39)">
+                                                <path
+                                                    d="m73.182 100.2c2.343 0 4.818-1.266 4.818-3.6v-10.8c0-3.964-7.075-6-10.84-6-.373 0-.779.02-1.205.06m7.227 25.14v-16.8zm-4.818-28.8c2.807 0 4.818-1.764 4.818-4.32v-2.16c0-2.556-2.01-4.32-4.818-4.32s-4.819 1.764-4.819 4.32v2.16c0 2.556 2.01 4.32 4.819 4.32zm-38.546 24c-2.343 0-4.818-1.266-4.818-3.6v-10.8c0-3.964 7.075-6 10.84-6 .373 0 .779.02 1.205.06m-7.227 25.14v-16.8zm4.818-28.8c-2.807 0-4.818-1.764-4.818-4.32v-2.16c0-2.556 2.01-4.32 4.818-4.32s4.819 1.764 4.819 4.32v2.16c0 2.556-2.01 4.32-4.819 4.32zm6.023-14.4c-2.808 0-4.818-1.764-4.818-4.32v-2.16c0-2.556 2.01-4.32 4.818-4.32s4.818 1.764 4.818 4.32v2.16c0 2.556-2.01 4.32-4.818 4.32zm21.682 0c-2.808 0-4.818-1.764-4.818-4.32v-2.16c0-2.556 2.01-4.32 4.818-4.32s4.818 1.764 4.818 4.32v2.16c0 2.556-2.01 4.32-4.818 4.32z"
+                                                    stroke="#323232"></path>
+                                                <path
+                                                    d="m58.727 97.8c2.603 0 4.818-2.466 4.818-4.8v-10.8c0-3.964-7.86-6-12.045-6s-12.045 2.036-12.045 6v10.8c0 2.334 2.215 4.8 4.818 4.8m7.227-25.2c2.808 0 4.818-1.764 4.818-4.32v-2.16c0-2.556-2.01-4.32-4.818-4.32s-4.818 1.764-4.818 4.32v2.16c0 2.556 2.01 4.32 4.818 4.32zm7.227 32.4v-20.4zm-14.454-20.4v20.4z"
+                                                    stroke="#490eea"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Dedicated Development Team </h3>
+                                            <p class="offer-content-description">Hire a loyal software development team
+                                                with niche skills and deep expertise. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-bottom-left-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="77" height="81"
+                                            viewBox="0 0 77 81" class="offer-image replaced-svg">
+                                            <defs>
+                                                <filter id="a" width="104.3%" height="113.3%" x="-2.1%" y="-5.8%"
+                                                    filterUnits="objectBoundingBox">
+                                                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1">
+                                                    </feOffset>
+                                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                                        stdDeviation="7.5"></feGaussianBlur>
+                                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0">
+                                                    </feColorMatrix>
+                                                    <feMerge>
+                                                        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                                    </feMerge>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd" stroke-linejoin="round" filter="url(#a)"
+                                                transform="translate(-7 -223)">
+                                                <path stroke="#323232"
+                                                    d="M45.5 232v10.34V232zm-12.75 3.386l5.216 8.956-5.216-8.956zm-9.334 9.252l9.035 5.17-9.035-5.17zM20 257.277h10.432H20zm3.416 12.638l9.035-5.17-9.035 5.17zm44.168 0l-9.035-5.17 9.035 5.17zM71 257.277H60.568 71zm-3.416-12.639l-9.035 5.17 9.035-5.17zm-9.334-9.252l-5.216 8.956 5.216-8.956z">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M38.545 275.66h13.91M38.545 280.255h13.91M38.545 257.277c0-3.808 3.114-6.894 6.955-6.894">
+                                                </path>
+                                                <path stroke="#323232"
+                                                    d="M42.023 260.723l3.477 3.447 3.477-3.447M45.5 264.17v8.043">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M50.136 284.851h-1.159L47.818 286h-4.636l-1.16-1.149h-1.158M51.295 272.213v-1.15c0-2.074.728-3.987 2.182-5.458 2.19-2.214 3.614-4.953 3.614-8.328 0-6.346-5.19-11.49-11.591-11.49-6.402 0-11.59 5.144-11.59 11.49 0 3.375 1.424 6.114 3.613 8.328 1.454 1.47 2.182 3.384 2.182 5.459v1.149">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">IT Consulting </h3>
+                                            <p class="offer-content-description">
+                                                Trust our top minds to eliminate workflow pain points, implement new
+                                                tech, and consolidate app portfolios. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 85 84"
+                                            viewBox="0 0 85 84" class="offer-image replaced-svg">
+                                            <g fill="none">
+                                                <g stroke="#505050">
+                                                    <path d="m49.2 67.2-4.7 4.6 4.7 4.7"></path>
+                                                    <path d="m44.5 71.8h26.3c2.6 0 4.6-2.1 4.6-4.7v-27.9"></path>
+                                                    <path d="m36.8 14.4 4.7-4.6-4.7-4.7"></path>
+                                                    <path d="m41.5 9.8h-26.3c-2.6 0-4.6 2.1-4.6 4.7v27.9"></path>
+                                                </g>
+                                                <path d="m19.8 61h46.4v-40.4h-46.4z" stroke="#490eea"></path>
+                                                <path d="m24.5 25.3h3.1m1.5 0h3.1m-12.4 4.6h46.4" stroke="#490eea">
+                                                </path>
+                                                <path d="m26 54.8h15.5v-18.7h-15.5z" stroke="#505050"></path>
+                                                <path
+                                                    d="m46.1 36.1h15.5m-15.5 6.3h15.5m-15.5 6.2h9.3m20.1-12.5v-3.1m0-3.1v-3.1m-65 28v-3.1m0-3.1v-3.1"
+                                                    stroke="#505050"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                UX / UI Design </h3>
+                                            <p class="offer-content-description">
+                                                Build the product you need on time with an experienced team that uses a
+                                                clear and effective design process. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-bottom-right-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="72"
+                                            viewBox="0 0 84 72" class="offer-image replaced-svg">
+                                            <defs>
+                                                <filter id="a" width="104.3%" height="113.3%" x="-2.1%" y="-5.8%"
+                                                    filterUnits="objectBoundingBox">
+                                                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1">
+                                                    </feOffset>
+                                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                                        stdDeviation="7.5"></feGaussianBlur>
+                                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0">
+                                                    </feColorMatrix>
+                                                    <feMerge>
+                                                        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                                    </feMerge>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd" filter="url(#a)"
+                                                transform="translate(-755 -218)">
+                                                <path stroke="#323232"
+                                                    d="M824 263.941h-21.13l-2.348 2.353h-5.87l-3.522-2.353H770v2.353a4.701 4.701 0 0 0 4.696 4.706h44.608a4.701 4.701 0 0 0 4.696-4.706v-2.353z">
+                                                </path>
+                                                <path stroke="#323232"
+                                                    d="M820.478 263.941v-30.588A2.35 2.35 0 0 0 818.13 231h-42.26a2.35 2.35 0 0 0-2.348 2.353v30.588">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M782.913 239.235l2.348 2.353 4.696-4.706M782.913 247.47l2.348 2.354 4.696-4.706M782.913 255.706l2.348 2.353 4.696-4.706M793.478 239.235h16.435M793.478 247.47h16.435M793.478 255.706h16.435">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                QA &amp; Testing </h3>
+                                            <p class="offer-content-description">
+                                                Turn to our experts to perform comprehensive, multi-stage testing and
+                                                auditing of your software. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row">
+                                <div class="col-md-6 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-top-left-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="78"
+                                            viewBox="0 0 84 78" class="offer-image replaced-svg">
+                                            <defs>
+                                                <filter id="a" width="104.3%" height="113.3%" x="-2.1%" y="-5.8%"
+                                                    filterUnits="objectBoundingBox">
+                                                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1">
+                                                    </feOffset>
+                                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                                        stdDeviation="7.5"></feGaussianBlur>
+                                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0">
+                                                    </feColorMatrix>
+                                                    <feMerge>
+                                                        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                                    </feMerge>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd" filter="url(#a)"
+                                                transform="translate(-3 -220)">
+                                                <path stroke="#323232"
+                                                    d="M59.087 263.657h4.696c4.538 0 8.217-3.674 8.217-8.207 0-4.533-3.679-8.208-8.217-8.208-.872 0-1.712.138-2.5.39a8.253 8.253 0 0 0 .152-1.563c0-4.533-3.68-8.208-8.217-8.208a8.183 8.183 0 0 0-5.368 2.002c-1.6-4.575-5.948-7.863-11.074-7.863-6.484 0-11.74 5.25-11.74 11.727 0 1.237.193 2.427.549 3.547-4.242.324-7.585 3.856-7.585 8.176 0 4.531 3.68 8.207 8.218 8.207h3.521">
+                                                </path>
+                                                <path stroke="#323232"
+                                                    d="M25.584 247.266c.209-.016.42-.023.634-.023 1.593 0 3.08.453 4.34 1.236M47.87 239.855c.301.857.504 1.76.597 2.695M61.286 247.632a8.176 8.176 0 0 1-1.025 2.668">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M53.218 278.9h-17.61a3.52 3.52 0 0 1-3.52-3.518v-1.172a3.52 3.52 0 0 1 3.52-3.518h17.61a3.52 3.52 0 0 1 3.521 3.518v1.172a3.52 3.52 0 0 1-3.521 3.518z">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M53.218 270.692h-17.61a3.52 3.52 0 0 1-3.52-3.517v-1.173a3.52 3.52 0 0 1 3.52-3.517h17.61a3.52 3.52 0 0 1 3.521 3.517v1.173a3.52 3.52 0 0 1-3.521 3.517z">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M53.218 262.485h-17.61a3.52 3.52 0 0 1-3.52-3.518v-1.172a3.52 3.52 0 0 1 3.52-3.518h17.61a3.52 3.52 0 0 1 3.521 3.518v1.172a3.52 3.52 0 0 1-3.521 3.518z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Cloud Computing </h3>
+                                            <p class="offer-content-description">
+                                                Use cloud computing solutions to create a scalable, flexible, and
+                                                connected enterprise environment. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-top-right-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="55"
+                                            viewBox="0 0 39 55" class="offer-image replaced-svg">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path stroke="#494946" stroke-linejoin="round"
+                                                    d="M29.824 44.66V55M9.176 44.66V55m24.089-18.383c0 1.503-.36 4.56-1.147 5.745-.79 1.184-4.589 4.595-4.589 4.595a8.254 8.254 0 0 1-5.735 2.298h-4.588a8.254 8.254 0 0 1-5.735-2.298s-3.8-3.41-4.589-4.595c-.789-1.185-1.147-4.242-1.147-5.745M16.06 11.34V1h6.882v10.34M39 23.98H0M12.618 7.894V2.149C7.169 3.968 3.44 7.844 3.44 13.639v4.595l-2.294 1.149v2.298M26.382 7.894V2.149c5.449 1.819 9.177 5.695 9.177 11.49v4.595l2.294 1.149v2.298">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M33.3 26.376h2.21v5.795c-1.59 1.525-2.505 2.313-2.746 2.366-1.705.376-4.206.84-7.502 1.392a5.486 5.486 0 0 1-2.62-.66l-1.346-.733c-.536-.292-1.185-.808-1.787-.816-.635-.007-1.223.508-1.788.816l-1.345.733a5.48 5.48 0 0 1-2.62.66c-3.296-.55-5.803-1.014-7.52-1.392-.23-.05-1.195-.839-2.897-2.366v-5.814h2.335">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Blockchain Development </h3>
+                                            <p class="offer-content-description">
+                                                Introduce the highest level of security and automate your operations
+                                                with our blockchain solutions. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-bottom-left-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 85 84"
+                                            viewBox="0 0 85 84" class="offer-image svg-custom replaced-svg">
+                                            <g fill="none">
+                                                <g stroke="#505050">
+                                                    <path d="m49.2 67.2-4.7 4.6 4.7 4.7"></path>
+                                                    <path d="m44.5 71.8h26.3c2.6 0 4.6-2.1 4.6-4.7v-27.9"></path>
+                                                    <path d="m36.8 14.4 4.7-4.6-4.7-4.7"></path>
+                                                    <path d="m41.5 9.8h-26.3c-2.6 0-4.6 2.1-4.6 4.7v27.9"></path>
+                                                </g>
+                                                <path d="m19.8 61h46.4v-40.4h-46.4z" stroke="#1476f2"></path>
+                                                <path d="m24.5 25.3h3.1m1.5 0h3.1m-12.4 4.6h46.4" stroke="#1476f2">
+                                                </path>
+                                                <path d="m26 54.8h15.5v-18.7h-15.5z" stroke="#505050"></path>
+                                                <path
+                                                    d="m46.1 36.1h15.5m-15.5 6.3h15.5m-15.5 6.2h9.3m20.1-12.5v-3.1m0-3.1v-3.1m-65 28v-3.1m0-3.1v-3.1"
+                                                    stroke="#505050"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">UX / UI Design </h3>
+                                            <p class="offer-content-description">
+                                                Build the product you need on time with an experienced team that uses a
+                                                clear and effective design process. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-bottom-right-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="85" height="84"
+                                            viewBox="0 0 85 84" class="offer-image replaced-svg">
+                                            <defs>
+                                                <filter id="a" width="104.3%" height="113.3%" x="-2.1%" y="-5.8%"
+                                                    filterUnits="objectBoundingBox">
+                                                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1">
+                                                    </feOffset>
+                                                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1"
+                                                        stdDeviation="7.5"></feGaussianBlur>
+                                                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0">
+                                                    </feColorMatrix>
+                                                    <feMerge>
+                                                        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                                        <feMergeNode in="SourceGraphic"></feMergeNode>
+                                                    </feMerge>
+                                                </filter>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd" stroke-linejoin="round" filter="url(#a)"
+                                                transform="translate(-752 -210)">
+                                                <path stroke="#323232"
+                                                    d="M798.14 229.535v-6.28h-10.047v5.682a19.967 19.967 0 0 0-5.168 2.14l-4.017-4.017-7.104 7.104 4.017 4.017a19.967 19.967 0 0 0-2.14 5.168H768v10.046h5.681a19.967 19.967 0 0 0 2.14 5.168l-4.017 4.017 7.104 7.105 4.017-4.018a19.967 19.967 0 0 0 5.168 2.14v5.681h10.047v-6.279">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M800.651 234.558h1.256l6.279-6.279M808.186 269.72l-7.535-7.534h-7.535c-7.629 0-13.814-6.185-13.814-13.814 0-7.629 6.185-13.814 13.814-13.814">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M794.372 254.651h-1.256a6.28 6.28 0 0 1 0-12.558h10.047l5.023-5.023h6.28M814.465 260.93h-5.023l-6.28-6.279h-1.255M814.465 225.767a3.767 3.767 0 1 1-7.534 0 3.767 3.767 0 0 1 7.534 0z">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M822 237.07a3.767 3.767 0 1 1-7.534 0 3.767 3.767 0 0 1 7.534 0zM822 248.372a3.767 3.767 0 1 1-7.534 0 3.767 3.767 0 0 1 7.534 0zM822 260.93a3.767 3.767 0 1 1-7.534 0 3.767 3.767 0 0 1 7.534 0zM814.465 272.233a3.767 3.767 0 1 1-7.534 0 3.767 3.767 0 0 1 7.534 0zM801.907 248.372h11.302M791.86 248.372h2.512M796.884 248.372h2.511M796.884 254.651h2.511M795.628 234.558h2.512">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Internet of Things </h3>
+                                            <p class="offer-content-description">
+                                                Secure IoT solutions will let you gather Big Data, optimise key
+                                                processes, and improve decision-making. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="row">
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-top-left-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="55"
+                                            viewBox="0 0 39 55" class="offer-image replaced-svg">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path stroke="#494946" stroke-linejoin="round"
+                                                    d="M29.824 44.66V55M9.176 44.66V55m24.089-18.383c0 1.503-.36 4.56-1.147 5.745-.79 1.184-4.589 4.595-4.589 4.595a8.254 8.254 0 0 1-5.735 2.298h-4.588a8.254 8.254 0 0 1-5.735-2.298s-3.8-3.41-4.589-4.595c-.789-1.185-1.147-4.242-1.147-5.745M16.06 11.34V1h6.882v10.34M39 23.98H0M12.618 7.894V2.149C7.169 3.968 3.44 7.844 3.44 13.639v4.595l-2.294 1.149v2.298M26.382 7.894V2.149c5.449 1.819 9.177 5.695 9.177 11.49v4.595l2.294 1.149v2.298">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M33.3 26.376h2.21v5.795c-1.59 1.525-2.505 2.313-2.746 2.366-1.705.376-4.206.84-7.502 1.392a5.486 5.486 0 0 1-2.62-.66l-1.346-.733c-.536-.292-1.185-.808-1.787-.816-.635-.007-1.223.508-1.788.816l-1.345.733a5.48 5.48 0 0 1-2.62.66c-3.296-.55-5.803-1.014-7.52-1.392-.23-.05-1.195-.839-2.897-2.366v-5.814h2.335">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Construction</h3>
+                                            <p class="offer-content-description">
+                                                Advanced software solutions that take Construction into the Digital Era.
+                                            </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="45"
+                                            viewBox="0 0 54 45" class="offer-image replaced-svg">
+                                            <g fill="none" fill-rule="evenodd" stroke-linejoin="round">
+                                                <path stroke="#323232"
+                                                    d="M50.033 19.105c.171-.658.305-1.325.404-2.003.61-4.179-.109-9.928-4.495-13.469C41.033-.33 31.495-.353 27 7.285 22.503-.353 12.967-.33 8.057 3.633c-4.385 3.54-5.104 9.29-4.494 13.47a18.46 18.46 0 0 0 .735 3.13M8.05 27.025C11.698 31.746 17.017 38.06 27 44c5.719-7.638 15.844-12.164 19.783-18.105">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M0 23.632h12.375l3.375 2.263 5.625-15.842 2.25 22.631 5.625-12.447 2.25 4.526 3.375-2.263H54">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Healthcare </h3>
+                                            <p class="offer-content-description">
+                                                Patient-friendly software that empowers healthcare industry workers.
+                                            </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-top-right-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="56"
+                                            viewBox="0 0 40 56" class="offer-image replaced-svg">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path stroke="#323232"
+                                                    d="M35.438 55H4.561C2.595 55 1 53.423 1 51.478V4.522C1 2.577 2.595 1 4.563 1h30.875C37.404 1 39 2.577 39 4.522v46.956C39 53.423 37.405 55 35.437 55zM18.813 4.522h5.937M14.063 4.522h2.374M1 47.957h38M1 8.043h38M17.625 51.478h4.75">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M12.875 19.783h19.779c.796 0 1.366.758 1.138 1.51l-2.85 9.392c-.151.496-.613.837-1.138.837H14.062">
+                                                </path>
+                                                <path stroke="#490eea"
+                                                    d="M29.5 36.217H16.437c-.55 0-1.03-.652-1.187-1.174L9.312 17.435h-4.75M14.063 39.74h2.374M27.125 39.74H29.5">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Retail &amp; eCommerce </h3>
+                                            <p class="offer-content-description">
+                                                Engaging and exciting software solutions for modern retail. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-bottom-left-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 55 50"
+                                            width="55" class="offer-image replaced-svg">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="m35.892 17h10.34v-4.571l8.031 9.142-8.031 8v-4.571h-5.745m-25.277 2.286h-5.743v-4.572l-8.043 9.143 8.043 8v-4.571h13.787m5.744 0h-3.447m12.639-10.286h-3.447m-13.788 2.286h-3.445m9.19 0h-3.447m-3.447-10.286h4.17c.952 0 1.723-.768 1.723-1.714 0-.947-.77-1.715-1.723-1.715h-1.149a1.72 1.72 0 0 1 -1.723-1.714 1.72 1.72 0 0 1 1.723-1.714h3.873m-3.447 6.857v3.429m0-10.286v-3.429"
+                                                    stroke="#490eea"></path>
+                                                <path
+                                                    d="m33.594 13.571c0-5.68-4.663-10.285-10.415-10.285s-10.414 4.604-10.414 10.285c0 5.682 4.662 10.286 10.414 10.286s10.415-4.604 10.415-10.286z"
+                                                    stroke="#490eea"></path>
+                                                <path
+                                                    d="m32.71 4.04a4.595 4.595 0 0 1 4.33-3.04c2.539 0 4.597 2.047 4.597 4.572 0 2.524-2.058 4.571-4.596 4.571-.398 0-.784-.05-1.151-.145m-3.445 24.145c0-2.525 2.058-4.572 4.596-4.572s4.595 2.047 4.595 4.572c0 2.524-2.057 4.571-4.595 4.571s-4.596-2.047-4.596-4.571zm-10.341 10.286c0-2.525 2.058-4.572 4.596-4.572s4.596 2.047 4.596 4.572c0 2.524-2.058 4.571-4.596 4.571s-4.596-2.047-4.596-4.571z"
+                                                    stroke="#323232"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                FinTech </h3>
+                                            <p class="offer-content-description">
+                                                Meet the demands of modern customers in speed and security with scalable
+                                                financial technology. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 54 56"
+                                            width="54" class="offer-image replaced-svg">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="m7.043 55v-2.935c0-.972.79-1.76 1.761-1.76h8.805a2.347 2.347 0 0 0 2.348-2.348v-.587c0-.972.788-1.761 1.76-1.761h.587a2.347 2.347 0 0 0 2.348-2.348v-1.174a2.347 2.347 0 0 0 -2.348-2.348h-7.043c-.972 0-1.761.789-1.761 1.761s-.789 1.76-1.76 1.76h-8.219m24.653 11.74v-3.522a2.347 2.347 0 0 1 2.348-2.348h8.217a2.347 2.347 0 1 0 0-4.695h-1.174a2.347 2.347 0 1 1 0-4.696h10.565"
+                                                    stroke="#323232" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="m1.174 55c0-14.263 11.563-25.826 25.826-25.826s25.826 11.563 25.826 25.826z"
+                                                    stroke="#323232"></path>
+                                                <path
+                                                    d="m30.522 8.043.03-1.173-4.727-5.87h-3.522l2.348 5.87v1.173zm14.087 4.697a2.347 2.347 0 0 0 -2.348-2.349h-26.342c-.128 0-4.18-3.521-4.18-3.521h-2.348l1.123 4.714c-.658.347-1.123.695-1.123 1.314 0 1.858 4.164 2.189 5.355 2.189h9.906v2.348l-3.522 7.043h3.522l5.87-5.87 2.267-3.521h9.472a2.347 2.347 0 0 0 2.348-2.348z"
+                                                    stroke="#490eea"></path>
+                                                <path
+                                                    d="m0 31.774a36.357 36.357 0 0 1 18.783-11.06m15.26-.251a36.348 36.348 0 0 1 19.73 11.061"
+                                                    stroke="#323232"></path>
+                                            </g>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Travel &amp; Hospitality </h3>
+                                            <p class="offer-content-description">
+                                                Extend the comfort of your resort with practical software solutions.
+                                            </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 nospace">
+                                    <div class="tabcontent-item" style="border-bottom-right-radius: 7px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="56"
+                                            viewBox="0 0 49 56" fill="none" class="offer-image replaced-svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M24.4978 1C22.2151 4.08004 6.98043 10.394 1 10.394V32.7046C1 43.1941 23.1791 54.6689 24.4849 55C25.7895 54.6689 47.9698 42.3921 47.9698 33.8789V10.394C41.4457 10.394 26.7817 4.08004 24.4978 1Z"
+                                                stroke="#505050" stroke-width=".771"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M37.4012 38.5604H11.5678C10.9196 38.5604 10.3936 38.0343 10.3936 37.3861V20.9467C10.3936 20.2985 10.9196 19.7725 11.5678 19.7725H37.4012C38.0505 19.7725 38.5754 20.2985 38.5754 20.9467V37.3861C38.5754 38.0343 38.0505 38.5604 37.4012 38.5604Z"
+                                                stroke="#490eea" stroke-width=".771"></path>
+                                            <path
+                                                d="M20.9619 19.7724V16.2497C20.9619 15.6015 21.488 15.0754 22.1362 15.0754H26.8331C27.4825 15.0754 28.0074 15.6015 28.0074 16.2497V19.7724"
+                                                stroke="#490eea" stroke-width=".771"></path>
+                                            <path
+                                                d="M22.1367 29.1664V31.5149C22.1367 32.1631 22.6628 32.6891 23.311 32.6891H25.6595C26.3088 32.6891 26.8337 32.1631 26.8337 31.5149V29.1664"
+                                                stroke="#490eea" stroke-width=".771"></path>
+                                            <path
+                                                d="M38.5754 26.8179C38.5754 28.1142 32.2662 29.1664 24.4845 29.1664C16.7028 29.1664 10.3936 28.1142 10.3936 26.8179"
+                                                stroke="#490eea" stroke-width=".771"></path>
+                                        </svg>
+                                        <div class="offer-content">
+                                            <h3 class="offer-content-title">
+                                                Insurance </h3>
+                                            <p class="offer-content-description">
+                                                Boost the profitability and safety of your business processes through
+                                                innovative insurance software solutions. </p>
+                                            <a href="#" class="offer-content-link-more" rel="nofollow">view more<i
+                                                    class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+
+        $('#nav-home').addClass('show');
+
+        $('body a').on('click', function (e) {
+            var target = $(this).attr('target');
+            var fancybox = $(this).data('fancybox');
+            var url = this.getAttribute("href");
+            var tabid=this.getAttribute("id");
+            e.preventDefault();
+            if (url.indexOf('#') != -1) {
+                    var hash = url.substring(url.indexOf('#'));
+                    var tabpanel=$(url);
+                    $('.tab-content').each(function (i){
+                        $(this).find('.tab-pane').each(function (i){                            
+                        $(this).removeClass('show');
+                        if('#'+$(this).attr('id')==url){
+                            $(this).addClass('show');
+                        }  
+                    });
+                    });
+                    
+                    $('#nav-tab').each(function (i){
+                        $(this).find('.nav-item').each(function (i){                            
+                        $(this).removeClass('active');
+                        if($(this).attr('id')==tabid){
+                            $(this).addClass('active');
+                        }  
+                    });
+                    });
+
+                    
+            }
+           
+            
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>

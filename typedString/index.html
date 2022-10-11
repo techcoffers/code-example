@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    <div id="typed-strings" style="display: none;">
+        <strong>Custom Software Development </strong>
+        <strong>Enterprise Software Development </strong>
+        <strong>Digital Transformation</strong>
+        </div>
+    <span id="typed"></span>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11" class="__web-inspector-hide-shortcut__"></script>
+   
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 100,
+        backDelay: 700,
+        backSpeed: 20,
+        loop: true,
+        loopCount: 500,
+       });
+        })   
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+[submodule "clientSlider"]
+	path = clientSlider
+	url = https://github.com/techcoffers/code-example.git
